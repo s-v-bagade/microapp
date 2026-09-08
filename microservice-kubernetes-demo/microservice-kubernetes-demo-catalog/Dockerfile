@@ -4,7 +4,7 @@ WORKDIR /build
 COPY pom.xml .
 RUN mvn -N install
 
-COPY microservice-kubernetes-demo-catalog/pom.xml microservice-kubernetes-demo-catalog/pom.x
+COPY microservice-kubernetes-demo-catalog/pom.xml microservice-kubernetes-demo-catalog/pom.xml
 WORKDIR /build/microservice-kubernetes-demo-catalog
 RUN mvn dependency:go-offline -B
 
